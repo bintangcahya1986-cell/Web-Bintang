@@ -299,15 +299,18 @@ blockquote {
   position: relative;
   display: flex;
   justify-content: center;
+  /* extra right + bottom padding so the offset border isn't clipped */
+  padding: 0 18px 18px 0;
 }
 
 .hero-image-wrap::before {
   content: '';
   position: absolute;
-  top: 14px;
-  left: 14px;
-  right: -14px;
-  bottom: -14px;
+  /* inset matches the photo edges exactly, then shifts 10px right+down */
+  top: 10px;
+  left: 10px;
+  right: 8px;   /* 18px wrap-padding − 10px offset */
+  bottom: 8px;  /* 18px wrap-padding − 10px offset */
   border: 2px solid var(--color-accent);
   border-radius: var(--radius-lg);
   z-index: 0;
@@ -315,8 +318,8 @@ blockquote {
 
 .hero-img {
   width: 100%;
-  max-width: 360px;
-  aspect-ratio: 3/4;
+  max-width: 340px;
+  aspect-ratio: 2/3;
   object-fit: cover;
   object-position: center top;
   border-radius: var(--radius-lg);
@@ -328,8 +331,8 @@ blockquote {
 
 .hero-img-placeholder {
   width: 100%;
-  max-width: 360px;
-  aspect-ratio: 3/4;
+  max-width: 340px;
+  aspect-ratio: 2/3;
   background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
   border-radius: var(--radius-lg);
   display: flex;
@@ -482,7 +485,7 @@ blockquote {
 
 .about-photo {
   width: 100%;
-  aspect-ratio: 3/4;
+  aspect-ratio: 2/3;
   object-fit: cover;
   object-position: center top;
   border-radius: var(--radius-lg);
@@ -492,7 +495,7 @@ blockquote {
 
 .about-photo-placeholder {
   width: 100%;
-  aspect-ratio: 3/4;
+  aspect-ratio: 2/3;
   background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
   border-radius: var(--radius-lg);
   display: flex;
@@ -862,7 +865,7 @@ blockquote {
 
   .hero-img,
   .hero-img-placeholder {
-    max-width: 260px;
+    max-width: 240px;
     margin: 0 auto;
   }
 
