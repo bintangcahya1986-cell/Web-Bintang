@@ -304,10 +304,10 @@ blockquote {
 .hero-image-wrap::before {
   content: '';
   position: absolute;
-  top: 12px;
-  left: 12px;
-  right: -12px;
-  bottom: -12px;
+  top: 14px;
+  left: 14px;
+  right: -14px;
+  bottom: -14px;
   border: 2px solid var(--color-accent);
   border-radius: var(--radius-lg);
   z-index: 0;
@@ -315,9 +315,10 @@ blockquote {
 
 .hero-img {
   width: 100%;
-  max-width: 400px;
-  aspect-ratio: 4/5;
+  max-width: 360px;
+  aspect-ratio: 3/4;
   object-fit: cover;
+  object-position: center top;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   position: relative;
@@ -327,8 +328,8 @@ blockquote {
 
 .hero-img-placeholder {
   width: 100%;
-  max-width: 400px;
-  aspect-ratio: 4/5;
+  max-width: 360px;
+  aspect-ratio: 3/4;
   background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
   border-radius: var(--radius-lg);
   display: flex;
@@ -481,8 +482,9 @@ blockquote {
 
 .about-photo {
   width: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 3/4;
   object-fit: cover;
+  object-position: center top;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   display: block;
@@ -490,7 +492,7 @@ blockquote {
 
 .about-photo-placeholder {
   width: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 3/4;
   background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
   border-radius: var(--radius-lg);
   display: flex;
@@ -860,7 +862,7 @@ blockquote {
 
   .hero-img,
   .hero-img-placeholder {
-    max-width: 280px;
+    max-width: 260px;
     margin: 0 auto;
   }
 
@@ -882,7 +884,7 @@ blockquote {
 
   .about-photo,
   .about-photo-placeholder {
-    max-width: 180px;
+    max-width: 160px;
   }
 
   .contact-grid {
