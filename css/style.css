@@ -299,21 +299,10 @@ blockquote {
   position: relative;
   display: flex;
   justify-content: center;
-  /* extra right + bottom padding so the offset border isn't clipped */
-  padding: 0 18px 18px 0;
 }
 
 .hero-image-wrap::before {
-  content: '';
-  position: absolute;
-  /* inset matches the photo edges exactly, then shifts 10px right+down */
-  top: 10px;
-  left: 10px;
-  right: 8px;   /* 18px wrap-padding − 10px offset */
-  bottom: 8px;  /* 18px wrap-padding − 10px offset */
-  border: 2px solid var(--color-accent);
-  border-radius: var(--radius-lg);
-  z-index: 0;
+  display: none;
 }
 
 .hero-img {
@@ -324,6 +313,7 @@ blockquote {
   object-position: center top;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
+  border: 3px solid var(--color-accent);
   position: relative;
   z-index: 1;
   display: block;
@@ -490,6 +480,7 @@ blockquote {
   object-position: center top;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
+  border: 3px solid var(--color-accent);
   display: block;
 }
 
