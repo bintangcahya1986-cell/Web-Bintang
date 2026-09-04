@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal blog of Bintang Cahaya Firmansyah — Information Systems student at University of Trunojoyo Madura." />
+  <title>Bintang Cahaya Firmansyah — Home</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- ── Navbar ─────────────────────────────────────────────── -->
+  <header class="navbar" role="banner">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="Bintang Cahaya Firmansyah — Home">
+        Bintang<span>.</span>
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button
+        id="hamburger"
+        class="hamburger"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ── Main Content ────────────────────────────────────────── -->
+  <main class="flex-1">
+
+    <!-- Hero -->
+    <section class="page-wrapper" aria-labelledby="hero-heading">
+      <div class="hero">
+
+        <!-- Text -->
+        <div class="hero-text fade-in">
+          <span class="hero-eyebrow">Personal Blog</span>
+          <h1 class="hero-title" id="hero-heading">
+            Hello, I'm<br />
+            <span class="accent">Bintang Cahaya<br />Firmansyah.</span>
+          </h1>
+          <p class="hero-desc">
+            From Lamongan, currently studying
+            <strong style="color: var(--color-text-primary); font-weight: 500;">Information Systems</strong>
+            at the Faculty of Engineering,
+            <strong style="color: var(--color-text-primary); font-weight: 500;">University of Trunojoyo Madura</strong>.
+            Passionate about web development, software engineering, and building things that matter.
+          </p>
+          <div class="hero-cta">
+            <a href="about.html" class="btn-primary">
+              About Me
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+            </a>
+            <a href="contact.html" class="btn-secondary">Get in Touch</a>
+          </div>
+        </div>
+
+        <!-- Photo -->
+        <div class="hero-image-wrap fade-in" style="transition-delay: 0.15s;" aria-hidden="true">
+          <img
+            id="hero-photo"
+            class="hero-img"
+            src="https://drive.google.com/thumbnail?id=1TLhTJ6RgPa0BjEJz7aeOfmWjJb_sEPqM&sz=w600"
+            alt="Bintang Cahaya Firmansyah"
+            onerror="this.style.display='none'; document.getElementById('hero-placeholder').style.display='flex';"
+          />
+          <div
+            id="hero-placeholder"
+            class="hero-img-placeholder"
+            style="display: none;"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#b0b0b0" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>
+            <span>Bintang Cahaya Firmansyah</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Stats Strip -->
+    <section class="page-wrapper" aria-label="Quick facts">
+      <div class="stats-strip fade-in">
+        <div class="stat-item">
+          <span class="stat-number" data-target="2" data-suffix="+">0+</span>
+          <span class="stat-label">Years Coding</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="6" data-suffix="+">0+</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="10" data-suffix="+">0+</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Interests -->
+    <section class="page-wrapper section" aria-labelledby="interests-heading">
+      <div class="section-header fade-in">
+        <div>
+          <span class="section-tag">What I do</span>
+          <h2 id="interests-heading" style="margin-top: 6px;">Areas of Focus</h2>
+        </div>
+      </div>
+
+      <div class="card-grid">
+
+        <article class="card fade-in" style="transition-delay: 0.05s;">
+          <div class="card-icon" aria-hidden="true">💻</div>
+          <h3 class="card-title">Web Development</h3>
+          <p class="card-body">
+            Building responsive, accessible, and performant web experiences using HTML, CSS, and JavaScript.
+          </p>
+        </article>
+
+        <article class="card fade-in" style="transition-delay: 0.1s;">
+          <div class="card-icon" aria-hidden="true">🐍</div>
+          <h3 class="card-title">Software Engineering</h3>
+          <p class="card-body">
+            Applying engineering principles to design clean, maintainable systems — with Python at the core.
+          </p>
+        </article>
+
+        <article class="card fade-in" style="transition-delay: 0.15s;">
+          <div class="card-icon" aria-hidden="true">🎨</div>
+          <h3 class="card-title">Design & UI</h3>
+          <p class="card-body">
+            Crafting clean, visually consistent interfaces with a strong eye for typography and layout.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Blockquote Pull Quote -->
+    <section class="page-wrapper fade-in" aria-label="Personal motto">
+      <blockquote>
+        "The best way to learn is to build — one project at a time."
+      </blockquote>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="page-wrapper fade-in" aria-labelledby="cta-heading" style="padding-bottom: 96px;">
+      <div style="background-color: var(--color-text-primary); border-radius: var(--radius-lg); padding: 48px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;">
+        <div>
+          <h2 id="cta-heading" style="color: #fff; font-size: clamp(1.25rem, 3vw, 1.875rem);">Want to say hello?</h2>
+          <p style="color: #a3a3a3; margin-top: 6px; font-size: 0.9375rem;">
+            I'm always open to new opportunities and conversations.
+          </p>
+        </div>
+        <a href="contact.html" class="btn-primary" style="white-space: nowrap;">Send a Message</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <p class="footer-copy">
+        &copy; <span id="year"></span> Bintang Cahaya Firmansyah. All rights reserved.
+      </p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://github.com/bintangcahya1986-cell" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
